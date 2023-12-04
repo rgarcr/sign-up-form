@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+     height: 100vh; 
+}
+
+.left-column{
+    background-image: url("../sign-up-form/img/halie-west-25xggax4bSA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+}
+
+.left-column .logo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top:15vh;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.left-column .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.right-column{
+    background-color: #ebeaea;
+}
+
+.top-section, .mid-section, .bottom-section{
+    padding-left: 5%;
+
+}
+.top-section, .mid-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-section, .bottom-section{
+    height: 35%;
+}
+
+.top-section{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.mid-section{
+    background: white;
+    height: 30%;
+}
+
+.bottom-section{
+    padding-top: 5%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+}
+
+main > div{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+
+}
+
+.bottom-section button{
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #449b44;
+    color: white;
+    font-size: 1rem;
+}
