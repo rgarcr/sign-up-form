@@ -82,3 +82,23 @@ main > div{
     color: white;
     font-size: 1rem;
 }
+
+.error{
+    /* border-color: red; */
+    box-shadow: 0 0 5px 1px red;
+
+}
+
+.valid {
+    border-color: green;
+}
+
+input:focus{
+    border-color: rgb(37, 37, 107);
+    box-shadow: none;
+}
+
+.invalid{
+    box-shadow: 0 0 5px 1px red;
+
+}

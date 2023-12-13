@@ -19,46 +19,56 @@
     <div class="right-column">
         <div class="top-section">
             <p>This is not a real online service! You know you need
-                 something like this in your life to help you realize your deepest dreams.
+                something like this in your life to help you realize your deepest dreams.
                 Sign up now to get started.
             </p>
             <p>You know you want to.</p>
         </div>
-        <form action="" class="mid-section">
+        <form id="sign-up-form" action="#" method="" class="mid-section" novalidate>
             <h2>Let's do this!</h2>
             <main>
                 <div>
                     <label for="fname">First Name</label>
-                    <input type="text" name="first-name" id="fname">
+                    <input type="text" name="first-name" id="fname" required>
+                    <span></span>
                 </div>
                 <div>
                     <label for="lname">Last Name</label>
-                    <input type="text" name="last-name" id="lname">
+                    <input type="text" name="last-name" id="lname" required>
+                    <span></span>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
+                    <span></span>
                 </div>
                 <div>
                     <label for="phone">Phone Number</label>
                     <input type="tel" name="phone" id="phone">
+                    <span></span>
+
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required minlength="5">
+                    <span></span>
+
                 </div>
                 <div>
                     <label for="password-2">Confirm Password</label>
-                    <input type="password" name="password-2" id="password-2">
+                    <input type="password" name="password-2" id="password-2" required minlength="5">
+                    <span></span>
+
                 </div>
             </main>
         </form>
         <div class="bottom-section">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="sign-up-form">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
 
     </div>
+    <script src="form.js"></script>
 </body>
 
 </html>
