@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "norse-bold";
+    src:
+      url("fonts/webfontkit-20231213-193936/norse-bold_1-webfont.woff") format("woff2"),
+      url("fonts/webfontkit-20231213-193936/norse-bold_1-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 *{
     box-sizing: border-box;
 }
@@ -5,6 +14,10 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
      height: 100vh; 
+     font-family: "norse-bold", serif;
+}
+p{
+
 }
 
 .left-column{
@@ -49,7 +62,6 @@ body{
 }
 
 .top-section{
-    font-weight: 900;
     font-size: 1.5rem;
 }
 
