@@ -43,6 +43,12 @@ p{
     height: 100px;
 }
 
+.left-column .logo h1{
+    margin: 0;
+    align-self: center;
+    font-size: 4rem;
+}
+
 .right-column{
     background-color: #ebeaea;
 }

@@ -30,7 +30,7 @@ password2.addEventListener("input", ()=>{
 //check names
 function checkName(nameInput) {
   let msgLabel = document.querySelector("#" + nameInput.id + "+ span");
-  if (Input.validity.valueMissing) {
+  if (nameInput.validity.valueMissing) {
     nameInput.classList.add("error");
     if (nameInput.id === "fname") {
       msgLabel.innerHTML = "Enter First Name"
