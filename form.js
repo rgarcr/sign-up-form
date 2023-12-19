@@ -11,18 +11,18 @@ fname.addEventListener("input", () => {
   checkName(fname);
 });
 
-lname.addEventListener("input", ()=>{
+lname.addEventListener("input", () => {
   checkName(lname);
 })
-email.addEventListener("input", ()=>{
+email.addEventListener("input", () => {
   checkEmail(email);
 })
 
-password.addEventListener("input", ()=>{
+password.addEventListener("input", () => {
   checkPassword(password);
 })
 
-password2.addEventListener("input", ()=>{
+password2.addEventListener("input", () => {
   checkPassword(password2);
 })
 
@@ -33,7 +33,7 @@ function checkName(nameInput) {
   if (nameInput.validity.valueMissing) {
     nameInput.classList.add("error");
     if (nameInput.id === "fname") {
-      msgLabel.innerHTML = "*Enter First Name"
+      msgLabel.innerHTML = "Enter First Name"
     }
     if (nameInput.id === "lname")
       msgLabel.innerHTML = "Enter Last Name";
@@ -115,4 +115,5 @@ form.addEventListener("submit", (event) => {
   checkPassword(password2);
   if (password.value && password2.value)
     checkPasswordMatch(password.value, password2.value);
+
 })

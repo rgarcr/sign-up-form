@@ -84,6 +84,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
+    gap: 5px;
 }
 
 main > div{
@@ -102,21 +103,28 @@ main > div{
 }
 
 .error{
-    /* border-color: red; */
-    box-shadow: 0 0 5px 1px red;
-
+    border:  2px solid red;
 }
 
 .valid {
     border-color: green;
 }
 
-input:focus{
-    border-color: rgb(37, 37, 107);
+input:focus-visible{
+    outline-color: rgb(43, 43, 219);
     box-shadow: none;
 }
 
-.invalid{
-    box-shadow: 0 0 5px 1px red;
+input + span{
+    color: #e5496b;
+    margin-top: 3px;
+    position: relative;
+}
 
+.error + span::before{
+    position: absolute;
+    content: "*";
+    top: -22px;
+    left: -12px;
+    font-size: 2rem;
 }
