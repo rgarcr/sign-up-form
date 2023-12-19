@@ -33,7 +33,7 @@ function checkName(nameInput) {
   if (nameInput.validity.valueMissing) {
     nameInput.classList.add("error");
     if (nameInput.id === "fname") {
-      msgLabel.innerHTML = "Enter First Name"
+      msgLabel.innerHTML = "*Enter First Name"
     }
     if (nameInput.id === "lname")
       msgLabel.innerHTML = "Enter Last Name";
