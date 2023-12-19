@@ -87,6 +87,10 @@ function checkPassword(passwordInput) {
     document.querySelector("#" + passwordInput.id + "+ span").innerHTML = "Enter Password";
     passwordInput.classList.add("error");
   }
+  else if (passwordInput.validity.tooShort) {
+    document.querySelector("#" + passwordInput.id + "+ span").innerHTML = "Password must be at least 5 characters";
+    passwordInput.classList.add("error");
+  }
   else {
     document.querySelector("#" + passwordInput.id + "+ span").innerHTML = "";
     passwordInput.classList.remove("error")
